@@ -9,15 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <script src="https://kit.fontawesome.com/61e34cb1b6.js" crossorigin="anonymous"></script> 
-    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--fontAwesome styles and scripts-->
   
 <body>
   <header>
     <h1 class="page-title">Free Geek</h1>
   </header>
-  <div class="main-menu">
-    <button class="menubutton"><i></i></button>
-  </div>
+  
+  <div class="sidemenu">
+    <button id="menubutton" class="detatched" onclick="openSideMenu();">
+      <i id="menuicon" class="fas fa-chevron-right"></i>
+    </button>
+    <ul id="sidemenulist">
+      <li></li>
+    </ul>
+    </div>
+    <div id="topmenu">
+      <ul id="topmenulist"></ul>
+    </div>
+  
 
   <script src="scripts/main.js"></script>
 </body>

@@ -1,6 +1,7 @@
 /* Put your CSS here */
 .page-title {
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .fas {
@@ -13,7 +14,10 @@ span {
     color:white;
     font-size: 15px;
 }
-
+.flexdiv{
+    display: flex;
+    flex-direction: row;
+}
 #sidebar {
     visibility: visible;
     position: fixed;
@@ -29,9 +33,12 @@ span {
     font-size: 20px;
     max-height: 20px;
 }
+
 .itemmenu{
+    display: flex;
     display: inline-block;
 }
+
 #sidebar a {
     visibility: visible;
     display:block;
@@ -45,7 +52,6 @@ span {
     text-decoration: none;
     max-height: 20px;
     min-width: 20px;
-    
 }
 
 .shrink {
@@ -54,7 +60,7 @@ span {
 }
 
 .expand {
-    width:165px;
+    width:120px;
     transition: all 133ms ease-in;
 }
 #sidebar .textclosed{
@@ -62,17 +68,19 @@ span {
     visibility: hidden;
 }
 #sidebar .textopen{
-    margin: 0;
+    margin-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
     visibility: visible;
 }
-#sidebar .text{
-    display: inline-block;
-    
-}
+
 #sidebar a:hover {
     background-color: #3e3;
 }
-
+.main-content{
+    flex-direction: column;
+    background-color: aqua;
+}
 @media all and (min-width: 768px){
    #sidebar {
        visibility: hidden;

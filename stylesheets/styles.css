@@ -1,4 +1,3 @@
-/* Put your CSS here */
 .page-title {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,7 +32,11 @@ span {
     font-size: 20px;
     max-height: 20px;
 }
+.topnav{
+    visibility: hidden;
 
+    
+}
 .itemmenu{
     display: flex;
     display: inline-block;
@@ -88,5 +91,8 @@ span {
 
    #sidebar a {
        visibility: hidden;
+   }
+   .topnav{
+       visibility: visible;
    }
 }

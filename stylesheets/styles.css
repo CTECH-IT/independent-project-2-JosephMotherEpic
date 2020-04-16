@@ -34,7 +34,7 @@ span {
 }
 .topnav{
     visibility: hidden;
-
+    
     
 }
 .itemmenu{
@@ -94,5 +94,14 @@ span {
    }
    .topnav{
        visibility: visible;
+       background-color: #090;
+       height: 40px;
+       width: initial;
+   }
+   .topnav a {
+       vertical-align: bottom;
+       align-items: center;
+       text-decoration: none;
+       color: white;
    }
 }

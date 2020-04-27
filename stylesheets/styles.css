@@ -18,6 +18,8 @@ span {
     flex-direction: row;
 }
 #sidebar {
+    display: flex;
+    flex-direction: column;
     visibility: visible;
     position: fixed;
     top: 50%;
@@ -34,8 +36,6 @@ span {
 }
 .topnav{
     visibility: hidden;
-    
-    
 }
 .itemmenu{
     display: flex;
@@ -80,9 +80,13 @@ span {
 #sidebar a:hover {
     background-color: #3e3;
 }
+.contentheader{
+    text-align: center;
+}
 .main-content{
     flex-direction: column;
-    background-color: aqua;
+    padding-left: 100px;
+
 }
 @media all and (min-width: 768px){
    #sidebar {
@@ -91,17 +95,27 @@ span {
 
    #sidebar a {
        visibility: hidden;
+       
    }
    .topnav{
        visibility: visible;
+       
        background-color: #090;
        height: 40px;
        width: initial;
    }
    .topnav a {
-       vertical-align: bottom;
-       align-items: center;
+       
+       margin: 0;
+       position: relative;
+       top: 25%;
+       -ms-transform: translateY(-25%);
+       transform: translateY(-25%);
        text-decoration: none;
        color: white;
+   }
+   .topnav i {
+       padding-left: 10px;
+       padding-right: 5px;
    }
 }

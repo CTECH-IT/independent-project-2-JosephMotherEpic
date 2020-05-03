@@ -90,32 +90,34 @@ span {
 }
 @media all and (min-width: 768px){
    #sidebar {
-       visibility: hidden;
+        visibility: hidden;
    }
 
    #sidebar a {
-       visibility: hidden;
-       
+        visibility: hidden;
    }
    .topnav{
-       visibility: visible;
-       
-       background-color: #090;
-       height: 40px;
-       width: initial;
+        visibility: visible;
+        background-color: #090;
+        height: 40px;
+        width: initial;
+   }
+   .topnav a span {
+        margin: 0;
+        position: relative;
+        top: 25%;
+        -ms-transform: translateY(-25%);
+        transform: translateY(-25%);
+        color: white;
    }
    .topnav a {
-       
-       margin: 0;
-       position: relative;
-       top: 25%;
-       -ms-transform: translateY(-25%);
-       transform: translateY(-25%);
-       text-decoration: none;
-       color: white;
+        
+        text-decoration: none;
+        text-decoration: none;
+
    }
    .topnav i {
-       padding-left: 10px;
-       padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 5px;
    }
 }

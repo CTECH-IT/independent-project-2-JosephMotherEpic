@@ -1,3 +1,11 @@
+html,body{
+    height: 100%;
+}
+body {
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+}
 .page-title {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,7 +16,14 @@
     text-align: center;
     color: white;
 }
-
+.source{
+    font-size:8px;
+    color: grey;
+}
+.source a {
+    text-decoration: none;
+    
+}
 span {
     color:white;
     font-size: 15px;
@@ -17,6 +32,7 @@ span {
     display: flex;
     flex-direction: row;
 }
+
 #sidebar {
     display: flex;
     flex-direction: column;
@@ -88,6 +104,10 @@ span {
     flex-direction: column;
     padding-left: 100px;
 
+}
+.imagegallery {
+    display: flex;
+    
 }
 @media all and (min-width: 768px){
    #sidebar {

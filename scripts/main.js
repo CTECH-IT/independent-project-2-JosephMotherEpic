@@ -1,3 +1,4 @@
+
 let sidebar = document.getElementById("sidebar");
 let btnIcon = document.getElementById("btnicon");
 let button = document.getElementById("menubutton");

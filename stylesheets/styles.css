@@ -3,9 +3,11 @@ html,body{
 }
 body {
     display: flex;
-    
-    font-size: 12px;
+    margin: auto;
+    text-align:justify;
+    font-size: 20px;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .page-title {
     text-align: center;
@@ -27,7 +29,7 @@ body {
     overflow-x: auto;
     padding: 0;
     white-space: nowrap;
-    width: unset;
+    width: 500px;
     margin: auto;
    
 }
@@ -45,9 +47,8 @@ body {
     bottom: 25px;
     background-color: #090;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-.detailimage{
+.detailimage {
     flex: 1 1 auto;
     max-width: 500px;
 }
@@ -60,7 +61,7 @@ body {
     color: white;
 }
 .source{
-    font-size:8px;
+    font-size:12px;
     color: grey;
 }
 .source a {
@@ -146,6 +147,7 @@ span {
 .main-content{
     flex-direction: column;
     padding-left: 100px;
+    padding-right: 100px;
 
 }
 
@@ -159,9 +161,11 @@ span {
    }
    
    .topnav {
+        
         visibility: visible;
         background-color: #090;
         height: 40px;
+        padding:5px;
         width: initial;
    }
    .topnav .toptext{
@@ -169,13 +173,14 @@ span {
         
         margin: 0;
         position: relative;
-        top: -5%;
-        -ms-transform: translateY(5%);
-        transform: translateY(5%);
+        top: -10%;
+        -ms-transform: translateY(10%);
+        transform: translateY(10%);
    }
    
    .topnav a {
-        max-height: 40px;
+        height: 40px;
+        
         position: relative;
         top: 25%;
         -ms-transform: translateY(-25%);
@@ -184,10 +189,6 @@ span {
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         
-   }
-   
-   .topnav a:hover{
-    background-color: #3e3;
    }
    .topnav i {
         padding-left: 10px;

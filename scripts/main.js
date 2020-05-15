@@ -25,20 +25,22 @@ function getThumbnails(){
     thumbnailArrayTwo = [].slice.call(detailThumbnailTwo);
 }
 
-function setDetailImage(g, src) {
-    'use strict';
-    switch (g) {
-        case 1:
-            console.log({g, src});
+
+function setData(mode, thumb){
+    let text = thumb.getAttribute('data-image-caption');
+    let img = thumb.getAttribute('src');
+    switch(mode){
+        case 1:        
+            console.log({text, img});
+            detailImageOne.setAttribute('src', img);
+            detailCaptionOne.textContent = text;
             break;
         case 2:
-            detailImageTwo.setAttribute('src', src);
+            console.log({text, img})
+            detailImageTwo.setAttribute('src', img);
+            detailCaptionTwo.textContent = text;
             break;
     }
-}
-function setData(mode, thumb){
-    console.log({mode, thumb});
-
 }
 function activateThumbnail(mode, thumb){
     'use strict';
@@ -59,7 +61,12 @@ function activateThumbnail(mode, thumb){
 }
 function activateThumbnails(){
     getThumbnails();
-    
+    thumbnailArrayOne.forEach(element => {
+        activateThumbnail(1,element);
+    });
+    thumbnailArrayTwo.forEach(element => {
+        activateThumbnail(2,element);
+    })
 }
 
 
